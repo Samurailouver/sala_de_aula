@@ -29,12 +29,9 @@ def classificar_numero(numero:float):
         return "Negativo"
     else:
         return "Zero"
-def calcular_resultado(nota1:float, nota2):
-    if nota1 
+def calcular_resultado(nota1:float, nota2): 
+    if nota1 > 0:
         return 
-    
-    
-    
 if __name__ == "__main__":  
     
     teste = fizz_buzz(15)
@@ -48,5 +45,3 @@ if __name__ == "__main__":
     numero = classificar_numero(0)
     numero = classificar_numero(-5)
     print(numero)
-
-
