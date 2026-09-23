@@ -5,33 +5,64 @@ def dobrar(numeros:list):
 
 # Exercicio #1
 def filtrar_pares(numeros:list):
-    pares = numeros.copy()
+    pares = [] # ou pares = list()
     for numero in numeros:
-        if numero % 2 != 0:
-            pares.remove(numero)
-        print(numero)
+        if numero % 2 == 0:
+            pares.append(numero)
+
+    return pares
 
 # Exercicio #2
 def contar_negativos(numeros:list):
-    negativos = []
+    count = 0
     for numero in numeros:
-        if numero > 0:
-            negativos.append(numero)
-            print(numero)
+        if numero < 0:
+            count+=1
+    
+    return count
 
 #Exercicio #3
-def soma_maiores_que(numeros:list, limite:list):
-    soma = []
-    for numero in numeros
+def soma_maiores_que(numeros:list, limite:int):
+    soma = 0
+    for numero in numeros:
+        if numero > limite:
+            soma+=numero
+    
+    return soma
+
+#Exercicio #4
+def zerar_negativos(numeros:list):
+    aux = numeros.copy()
+    for n in numeros:
+        if n < 0:
+         indice = numeros.index(aux)
+         aux[indice]=0
+
+    return aux
 
 
-      
+
+    
+         
 
 if __name__ == '__main__':
     
-    dobrar([1,2,3,4,5]) 
-    filtrar_pares([2, 4, 6])
-    contar_negativos([3])
-    soma_maiores_que([10 + 20 + 15])
+   
+   
+   
+   
+    numeros_pares = filtrar_pares([1, 2, 3, 4, 5, 6])
+    print(numeros_pares)
+    
+    count = contar_negativos([3])
+    print(count)
+
+    numeros_soma = soma_maiores_que(['45'
+    print(numeros_soma)
+
+    numeros_zerar = zerar_negativos([4, 0, 7, 0, 0])
+    print(numeros_zerar)
+
+
 
 
