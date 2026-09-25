@@ -23,12 +23,12 @@ def contar_negativos(numeros:list):
 
 #Exercicio #3
 def soma_maiores_que(numeros:list, limite:int):
-    soma = numeros.index()
+    soma = 0
     for numero in numeros:
         if numero > limite:
             soma+=numero
 
-        return soma
+    return soma
 
 #Exercicio #4
 def zerar_negativos(numeros:list):
@@ -39,6 +39,17 @@ def zerar_negativos(numeros:list):
          aux[indice]=0
 
     return aux
+
+def contem_valor(lista: list, alvo:str):
+    indice = 0
+    while (indice < len(lista)):
+        if lista[indice] == alvo:
+            return True
+        else: 
+            indice += 1
+    return False
+
+        
 
 
 
@@ -54,15 +65,16 @@ if __name__ == '__main__':
     numeros_pares = filtrar_pares([1, 2, 3, 4, 5, 6])
     print(numeros_pares)
     
-    count = contar_negativos([3])
+    count = contar_negativos([10, -3, 0, -5, 8, -1])
     print(count)
 
-    soma = soma_maiores_que([45])
+    soma = soma_maiores_que([10, 5, 20, 3, 15], 8)
     print(soma)
 
     numeros_zerar = zerar_negativos([4, 0, 7, 0, 0])
     print(numeros_zerar)
 
-
+    indice = contem_valor(["maça", "banana", "uva"], "banana")
+    print(indice)
 
 
