@@ -1,18 +1,17 @@
 class Carta:
-    remetente: str
-    conteúdo: str
-    destinatario: str
 
+    remente:str
+    destinatario:str
+    conteudo:str
 
+    def __init__(self, 
+                 rementente:str, 
+                 destinatario:str, 
+                 conteudo:str):
+        self.conteudo = conteudo
+        self.destinatario = destinatario
+        self.remente = rementente
 
-    def __init__(self, remetente:str, conteúdo:str, destinario:str):
-        self.remetente = remetente  
-        self.conteúdo = conteúdo
-        self.destinatario = destinario
+#Instancia
+carta = Carta('João', 'Pyetra', 'Te amo ❤️')
 
-
-
-
-#instancia
-
-carta = Carta('João', 'Pyetra', 'Teamo ❤️')
