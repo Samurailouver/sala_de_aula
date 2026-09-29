@@ -1,16 +1,12 @@
-class Gato:
+from animal import Animal
 
-    pelagem:str
-    porte:str
-    idade:int
-    nome:str
+class Gato(Animal):
 
-    def __init__(self, 
-                 pelagem:str, 
-                 porte:str, 
-                 idade:int, 
-                 nome:str):
-        self.pelagem = pelagem
-        self.porte = porte
-        self.nome = nome
-        self.idade = idade if idade > 1 else 1
+    def __init__(self, nome):
+        super().__init__(nome)
+    #       OU 
+    # def __init__(self, nome):
+    #     super().nome = nome
+
+    def fazer_som(self):
+        return "Miau!"
