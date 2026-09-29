@@ -39,7 +39,7 @@ def zerar_negativos(numeros:list):
          aux[indice]=0
 
     return aux
-
+#Exercicios #5
 def contem_valor(lista: list, alvo:str):
     indice = 0
     while (indice < len(lista)):
@@ -48,6 +48,10 @@ def contem_valor(lista: list, alvo:str):
         else: 
             indice += 1
     return False
+#Exercicios #6
+def contar_aprovados(notas:list):
+    contar = 0
+    for n in notas:
 
         
 

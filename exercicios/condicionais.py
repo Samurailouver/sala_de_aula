@@ -32,6 +32,7 @@ def classificar_numero(numero:float):
 def calcular_resultado(nota1:float, nota2): 
     if nota1 > 0:
         return 
+    
 if __name__ == "__main__":  
     
     teste = fizz_buzz(15)
