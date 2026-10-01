@@ -50,8 +50,7 @@ def contem_valor(lista: list, alvo:str):
     return False
 #Exercicios #6
 def contar_aprovados(notas:list):
-    contar = 0
-    for n in notas:
+    
 
         
 

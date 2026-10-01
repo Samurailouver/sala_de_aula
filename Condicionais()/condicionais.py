@@ -29,9 +29,8 @@ def classificar_numero(numero:float):
         return "Negativo"
     else:
         return "Zero"
-def calcular_resultado(nota1:float, nota2): 
-    if nota1 > 0:
-        return 
+def calcular_resultado(nota1:float, nota2:float): 
+    
     
 if __name__ == "__main__":  
     
