@@ -1,19 +1,22 @@
-
 # Execício 1
+
 def formatar_saudacao(nome:str, cidade:str):
     return f"Olá {nome}, seja bem-vindo(a) a {cidade}!"
 
 #Exercício 2
+
 def calcular_perimetro(largura: float, altura: float) -> float:
     perimetro = 2 * (largura + altura)
     return perimetro
 
 # Exercício 3
+
 def fahrenheit_para_celsius(temp_f: float):
     temp_celsius = (temp_f - 32) * (5 / 9)
     return temp_celsius
 
 #Exercício 4
+
 def calcular_gorjeta_por_pessoa(conta:float, 
                                 porcentagem_gorjeta:float,
                                 pessoas:int):
@@ -21,16 +24,19 @@ def calcular_gorjeta_por_pessoa(conta:float,
     return gorjeta
 
 # Exercício 5
+
 def resumo_circulo(raio:float):
     pi = 3.14159
     area = pi * (raio**2)
     return f"Um círculo de raio {raio} tem área de {area:.2f}"
 
 # Exercício 6
+
 def resumo_juros_basico(capital:float, taxa:float, anos:int):
     M = capital * (1 + taxa/100)**anos
     return f"Após {anos} anos, R$ {capital}, cresce para R${M:.2f}"
 
+# Exercicio 7
 
 def metricas_cilindro(raio:float, altura:float):
     pi = 3.14159
@@ -38,6 +44,8 @@ def metricas_cilindro(raio:float, altura:float):
     area_superficie = 2*pi*raio*(raio + altura)
 
     return f"Volume do cilindro: {volume:.2f} | Área de superfície: {area_superficie:.2f}"
+
+# Exercicio 8
 
 def gerar_item_fatura(nome_item: str, 
                       preco: float, 
@@ -48,6 +56,8 @@ def gerar_item_fatura(nome_item: str,
     return f"Item: {nome_item}| Preço final: {preco - economia} \
     (Você economizou R${economia})"
 
+# Exercicio 9
+
 def resumo_emprestimo(capital:float, taxa_anual:float, anos:int):
     r = taxa_anual / 12 / 100
     n = anos * 12
@@ -55,6 +65,10 @@ def resumo_emprestimo(capital:float, taxa_anual:float, anos:int):
     total_pago = M * n
 
     return f"Empréstimo: R$ {capital} Parcela Mensal: R$ {M} | Total Pago: R$ {total_pago}"
+
+# Exercicio 10
+def e_bissexto(ano: int):
+    
 
 if __name__ == '__main__':
 
