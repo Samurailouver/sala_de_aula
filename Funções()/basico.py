@@ -70,7 +70,7 @@ def resumo_emprestimo(capital:float, taxa_anual:float, anos:int):
 def e_bissexto(ano: int):
     
 
-if __name__ == '__main__':
+if__name__ == '__main__':
 
     print("EXERCICIOS =============================== \n\n")
     saudacao = formatar_saudacao("Alice", "Porto Alegre")
