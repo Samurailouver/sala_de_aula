@@ -68,11 +68,11 @@ def resumo_emprestimo(capital:float, taxa_anual:float, anos:int):
 
 # Exercicio 10
 def e_bissexto(ano: int):
-    
+    raise NotImplemented
 
 if __name__ == '__main__':
-
     print("EXERCICIOS =============================== \n\n")
+    
     saudacao = formatar_saudacao("Alice", "Porto Alegre")
     print(f"1 - {saudacao}")
     
@@ -90,6 +90,18 @@ if __name__ == '__main__':
 
     juros = resumo_juros_basico(1000, 5, 3)
     print(f"6 - {juros}")
+    
+    medidas = metricas_cilindro(2.0, 5.0)
+    print(f"7 - {medidas}")
+
+    preço = gerar_item_fatura("Teclado", 80.0, 15.0)
+    print(f"8 - {preço}")
+
+    resumo = resumo_emprestimo(10000, 6.0, 3)
+    print (f"9 - {resumo}")
+    
+    distancia = calcular_distancia(1, 2, 4, 6)
+    print (f"10 - {distancia}")
 
 
     print("==========================================")
