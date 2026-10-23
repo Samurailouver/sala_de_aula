@@ -54,14 +54,24 @@ def maior_de_dois(a:int, b:int):
         return "São iguais"
 
 # Exercicio 6
+# Se for Vip ou uma compra acima de 200.
+# acima de 200 % 15 de desconto. Caso contrário 5% 
+#retorne uma F-string com valor final.
 
-def calcular_desconto(valor_compra:float, e_cliente_vip:float):
-    if e_cliente_vip / 15 < 200:
-        return "valor final R$ 127.50"
-    if valor_compra / 5 > 200:
-        return "valor final R$ 95.00"
-    
-    
+def calcular_desconto( valor_da_compra:float, e_cliente_vip: float):
+    resultado = valor_da_compra + e_cliente_vip
+    resultado = e_cliente_vip - 15
+    resultado = valor_da_compra - 5
+    return f"Valor final:R${resultado}"
+
+# Exercicio 7
+# "A" = (10.0, 9.0), "B" = ( 8.0, 7.0), "C" = (5.0, 6.9), "F" = ( 5.0 )
+
+def conceito_nota(nota:str):
+    if nota == ("A" + "B") > 7.0:
+        return "B"
+    else:
+        return "F"
     
 if __name__ == "__main__":  
     
@@ -82,6 +92,9 @@ if __name__ == "__main__":
     maior = maior_de_dois(10, 20)
     maior = maior_de_dois(5, 5)
     print(maior)
-    calcular = calcular_desconto(150.0)
-    calcular = calcular_desconto(100.0)
-    print(calcular)
+    nota = conceito_nota(8.5)
+    nota = conceito_nota (4.2)
+    print(nota)
+    valor = calcular_desconto(150.0, True)
+    valor = calcular_desconto(100.0, False)
+    print(valor)
