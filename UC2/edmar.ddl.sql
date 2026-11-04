@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS medico (
 );
 
 
-CREATE TABLE atendimento (
+CREATE TABLE IF NOT EXISTS atendimento (
     id_atendimento        SERIAL PRIMARY KEY,
     id_cliente            INTEGER REFERENCES cliente(id_cliente) NOT NULL,
     id_medico             INTEGER REFERENCES medico(id_medico) NOT NULL,
