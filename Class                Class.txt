@@ -1,0 +1,13 @@
+Class                Class                Caminho 
+
+mesmo cliente	  ("Ana", "Fifa", 20)	     um aluguel só 
+Class	exemplo	 Caminho
+
+
+mesmo cliente	("Ana", "Fifa", 20)
+("Ana", "Skyrim",30)
+("Ana", "GTA" 10)	
+mais de um cliente		
+
+
+	
