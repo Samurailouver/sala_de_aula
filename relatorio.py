@@ -2,7 +2,7 @@
 #
 # Material da UC3, Aula 01. Este arquivo é o que vocês vão TESTAR: ele roda,
 # imprime um resultado que parece certo e, mesmo assim, tem defeito. Não
-# conserte nada antes de escrever o teste que mostra o problema.
+# conserte nada antes de escrever o  que mostra o problema.
 
 from dataclasses import dataclass
 
@@ -48,7 +48,7 @@ def total_do_cliente(alugueis, cliente):
 
 
 
-# O "teste" que todo mundo já faz: rodar e olhar o que sai na tela.
+# O "" que todo mundo já faz: rodar e olhar o que sai na tela.
 if __name__ == "__main__":
     alugueis = [
         Aluguel("Ana", "FIFA 25", 30.0),
