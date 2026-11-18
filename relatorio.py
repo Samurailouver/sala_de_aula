@@ -2,7 +2,7 @@
 #
 # Material da UC3, Aula 01. Este arquivo é o que vocês vão TESTAR: ele roda,
 # imprime um resultado que parece certo e, mesmo assim, tem defeito. Não
-# conserte nada antes de escrever o  que mostra o problema.
+# conserte nada antes de escrever o teste que mostra o problema.
 
 from dataclasses import dataclass
 
@@ -23,8 +23,6 @@ class RelatorioDoMes:
         # infinito" pelo mesmo motivo.
         self.maior = float("-inf")
         self.menor = float("inf")
-        self.tres_maiores = []
-
 
     def avaliar(self, alugueis):
         for aluguel in alugueis:
@@ -32,9 +30,7 @@ class RelatorioDoMes:
                 self.maior = aluguel.valor
             elif aluguel.valor < self.menor:
                 self.menor = aluguel.valor
-          valores = sorted([a.valor for a in aluguel], reverse=True)
-          self.tres_maiores = [valores[i]for i in range(3)]
-            
+
 
 def total_do_cliente(alugueis, cliente):
     """Quanto um cliente gastou no mês, somando todos os aluguéis dele."""
@@ -45,10 +41,7 @@ def total_do_cliente(alugueis, cliente):
     return total
 
 
-
-
-
-# O "" que todo mundo já faz: rodar e olhar o que sai na tela.
+# O "teste" que todo mundo já faz: rodar e olhar o que sai na tela.
 if __name__ == "__main__":
     alugueis = [
         Aluguel("Ana", "FIFA 25", 30.0),

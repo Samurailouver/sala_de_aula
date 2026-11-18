@@ -18,29 +18,24 @@ da aula, e são vocês que vão mudar este arquivo até ele ficar testável.
 from datetime import date
 
 
-class Emprestimo:
-    id_emprestimo: int
-    cliente: str
-    telefone: str | None
-    data_prevista: date
-    data_entregue: date | None
-    avisado_em: date | None
+class RepositorioFalso:
+    def __init__(self, emprestimos):
+        self.emprestimos = emprestimos
+        self.atualizados = []
 
-    def __init__(
-        self,
-        id_emprestimo: int,
-        cliente: str,
-        telefone: str | None,
-        data_prevista: date,
-        data_entregue: date | None = None,
-        avisado_em: date | None = None
-        ):
-        self.id_emprestimo = id_emprestimo
-        self.cliente = cliente
-        self.telefone = telefone
-        self.data_prevista = data_prevista
-        self.data_entregue = data_entregue
-        self.avisado_em = avisado_em
+    def abertos(self):
+        return [e for e in self.emprestimos if e.data_entregue is None]
+
+    def atualiza(self, emprestimo):
+        self.atualizados.append(emprestimo)
+
+    def test_avisa_quem_passou_do_prazo():
+        atrasado = Emprestimo(1, "Ana Souza", "51 99999-0001", date(2026, 11, 1))
+
+        cobrador = CobradorDeAtrasos()
+        cobrador.cobrar()
+
+        assert cobrador.total_avisados == 1
 
     def atrasado_em(self, hoje: date) -> bool:
         # "Atrasado" é calculado, nunca guardado: uma coluna atrasado = TRUE
