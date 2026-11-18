@@ -1,8 +1,6 @@
 # relatorio.py — o relatório do mês da locadora.
 #
-# Material da UC3, Aula 01. Este arquivo é o que vocês vão TESTAR: ele roda,
-# imprime um resultado que parece certo e, mesmo assim, tem defeito. Não
-# conserte nada antes de escrever o teste que mostra o problema.
+# Material da UC3, Aula 01. Este arquivo é o que vocês vão TESTAR: ele roda, imprime um resultado que parece certo e, mesmo assim, tem defeito. Não conserte nada antes de escrever o teste que mostra o problema.
 
 from dataclasses import dataclass
 
@@ -37,7 +35,7 @@ def total_do_cliente(alugueis, cliente):
     total = 0.0
     for aluguel in alugueis:
         if aluguel.cliente == cliente:
-            total = aluguel.valor
+            total += aluguel.valor
     return total
 
 

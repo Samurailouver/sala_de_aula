@@ -1,15 +1,19 @@
-from relatorio import RelatorioDoMes,Aluguel
+import pytest
+from multa import multa, valor_do_aluguel
+def test_multa_antes_de_3_dia():
+    assert multa(0) == 0.0
+    assert multa(1) == 0.0
+    assert multa(2) == 0.0
 
+def test_multa_no_3_dia():
+    assert multa(3) == 15.0
 
-def test_valor_por_dia():
+def test_multa_depois_3_dia():
+    assert multa(4) == 20.0
 
-    dias_atrasado = [
-    
-    Aluguel("Dia 2", 10),
-    Aluguel("Dia 3", 15),
-    Aluguel("Dia 4", 20),
-    
-    ]
+def test_alugou_por_dias_valido():
+    assert valor_do_aluguel(10.0,1) == 10.0
 
-    valores = sorted([a.valor for a in alugueis])
-   
+def test_valor_por_dia_negativo_ou_zero_dias():
+    with pytest.raises(ValueError):
+        valor_do_aluguel(5.0,0)

@@ -8,24 +8,37 @@
 
 import psycopg2 as pg
 import pytest
+<<<<<<< HEAD
+=======
+from uc3.config_local import SENHA
+>>>>>>> aa71a02ab59703adb3b38176e4622f265c2b1cce
 
 BANCO_DE_TESTE = {
     "host": "localhost",
     "port": 5432,
+<<<<<<< HEAD
     "dbname": "locadora_teste",  # NUNCA o banco com os dados do projeto
     "user": "postgres",
     "password": "postgres",
+=======
+    "dbname": "confeitaria_teste",  # NUNCA o banco com os dados do projeto
+    "user": "atendente_teste",
+    "password": SENHA,
+>>>>>>> aa71a02ab59703adb3b38176e4622f265c2b1cce
 }
 
 
 @pytest.fixture
 def conexao():
+<<<<<<< HEAD
     conexao = pg.connect(
     "host": "localhost",
     "port": 5432,
     "dbname": "locadora_teste",  # NUNCA o banco com os dados do projeto
     "user": "postgres",
     "password": "postgres")
+=======
+>>>>>>> aa71a02ab59703adb3b38176e4622f265c2b1cce
     conexao = pg.connect(**BANCO_DE_TESTE)
     cursor = conexao.cursor()
     # Limpa ANTES de cada teste, e não depois: assim cada um começa do zero,
