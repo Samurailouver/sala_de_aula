@@ -1,0 +1,40 @@
+# Clinica 
+
+
+# INTRODUÇÃO
+## Introdução:
+
+A clínica possui muitos clientes, realiza diversos atendimentos diariamente e oferece diferentes tipos de exames.
+Com o grande fluxo de pacientes, torna-se necessário organizar melhor os agendamentos,
+ os cadastros, os atendimentos e os resultados dos exames.
+Atualmente, a falta de organização pode causar demora no atendimento, perda de informações,
+ dificuldades no controle dos horários e problemas no acesso ao histórico dos pacientes.
+
+
+
+## PROBLEMA
+
+## A dificuldade de organizar e controlar a grande quantidade de pacientes, atendimentos diários,
+ agendamentos e exames realizados pela clínica.
+
+### ESTORIAS
+
+-historia 
+      -descrição
+
+    - tarefas:
+        1-
+        -quem 
+        - oque
+        - tags : regras
+        -milestone
+        - criterios de aceitacao
+            -  suites ***green***
+            
+[ x ]             
+-
+-
+-
+-
+-
+-
