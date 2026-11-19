@@ -1,26 +1,6 @@
 from datetime import date
 
 
-<<<<<<< HEAD
-class RepositorioFalso:
-    def __init__(self, emprestimos):
-        self.emprestimos = emprestimos
-        self.atualizados = []
-
-    def abertos(self):
-        return [e for e in self.emprestimos if e.data_entregue is None]
-
-    def atualiza(self, emprestimo):
-        self.atualizados.append(emprestimo)
-
-    def test_avisa_quem_passou_do_prazo():
-        atrasado = Emprestimo(1, "Ana Souza", "51 99999-0001", date(2026, 11, 1))
-
-        cobrador = CobradorDeAtrasos()
-        cobrador.cobrar()
-
-        assert cobrador.total_avisados == 1
-=======
 class Emprestimo:
     def __init__(
         self,
@@ -37,7 +17,6 @@ class Emprestimo:
         self.data_prevista = data_prevista
         self.data_entregue = data_entregue
         self.avisado_em = avisado_em
->>>>>>> aa71a02ab59703adb3b38176e4622f265c2b1cce
 
     def atrasado_em(self, hoje: date) -> bool:
         return self.data_entregue is None and hoje > self.data_prevista

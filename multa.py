@@ -15,20 +15,13 @@ MULTA_POR_DIA = 5.00
 
 def multa(dias_atraso):
     """Multa pela devolução atrasada, em reais."""
-<<<<<<< HEAD
-    if dias_atraso > 3:
-=======
     if dias_atraso >= 3:
->>>>>>> aa71a02ab59703adb3b38176e4622f265c2b1cce
         return dias_atraso * MULTA_POR_DIA
     return 0.0
 
 
 def valor_do_aluguel(diaria, dias):
     """Quanto o cliente paga ao retirar o jogo."""
-<<<<<<< HEAD
-=======
     if dias <= 0:
         raise ValueError('O número de dias não pode ser zero')
->>>>>>> aa71a02ab59703adb3b38176e4622f265c2b1cce
     return diaria * dias
